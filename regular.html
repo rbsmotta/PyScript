@@ -1,0 +1,31 @@
+<!-- Plot of displot using Matplotlib and Seaborn frameworks -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - numpy
+        - seaborn
+        - matplotlib
+    </py-env>
+</head>
+
+<body>
+    <div id="plot"></div>
+    <py-script output="plot">
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.displot([0, 1, 2, 3, 4, 5])
+
+plt.show()
+plt
+
+    </py-script>
+
+</body>
+
+</html>
